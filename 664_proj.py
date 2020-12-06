@@ -16,7 +16,7 @@ game_count = len(data_dict['results'][0]['name'])
 
 processed_data = []
 
-for i in range(0, 1):
+for i in range(0, game_count):
     processed_data.append({'name': data_dict['results'][i]['name']})
     processed_data.append({'rating': data_dict['results'][i]['rating']})
     processed_data.append({'released': data_dict['results'][i]['released']})
